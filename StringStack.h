@@ -9,9 +9,9 @@
 class StringStack : public TrueStack
 {
 public:
-  virtual std::string pop();
-  virtual void push(std::string);
-  virtual bool isEmpty();
+  std::string pop();
+  void push(std::string);
+  bool isEmpty();
 private:
   std::vector<std::string> stack = std::vector<std::string>();
 };
